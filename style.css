@@ -54,7 +54,7 @@ nav {
   
   position: absolute;
   margin-right: 0px;
-  z-index: 1;
+  
   top:-10px;
   
   margin-left: 60%;
@@ -62,7 +62,7 @@ nav {
 
 svg {
   position: absolute;
-  
+  z-index: 1;
 }
 img {
   width: 100%;
@@ -551,6 +551,8 @@ button {
   .carousel{
     display:block;
     height: 350px;
+    position: absolute;
+    z-index: 100;
   }
   .carousel-cell.is-selected{
     
