@@ -5,8 +5,7 @@
 
 /* --------------------- */
 * {
-  -webkit-box-sizing: border-box;
-
+ 
   padding: 0;
   margin: 0;
 }
@@ -44,24 +43,40 @@ nav {
   width: 100%;
 }
 
-.nav-right {
+/* .nav-right {
   align-items: center;
   display: flex;
   margin-right: 0;
+} */
+.nav-right {
+  width: 35%;
+  height: 35%;
+  
+  position: absolute;
+  margin-right: 0px;
+  z-index: 1;
+  top:-10px;
+  
+  margin-left: 60%;
+}
+
+svg {
+  position: absolute;
+  
 }
 img {
   width: 100%;
   object-fit: cover;
 }
-#Layer_1 {
+/* #Layer_1 {
   display: inline;
-}
-#Layer_2 {
+} */
+/* #Layer_2 {
   display: none;
 }
 #Layer_3 {
   display: none;
-}
+} */
 .top-left {
   position: absolute;
   font-size: 35px;
@@ -274,6 +289,21 @@ button {
     padding-left: 5px;
   }
 }
+@media (max-width: 1183px) {
+  .service-container {
+    width: 100%;
+    margin-top: -40px;}
+    .navbar {
+      height: 270px;
+    }
+    #svg1 {
+      height: 280px;
+    }
+    .nav-right{
+      width: 50%;
+      height: 50%;
+    margin-left: 50%;}
+}
 @media (max-width: 1125px) {
   .service-card {
     height: 254px;
@@ -308,6 +338,11 @@ button {
 
   #svg1 {
     height: 270px;
+  }
+  .nav-right{
+    width: 50%;
+    height: 50%;
+    margin-left: 50%;
   }
 }
 @media (max-width: 955px) {
@@ -419,14 +454,50 @@ button {
   .top-left-2 {
     display: none;
   }
-  #Layer_1 {
+  /* #Layer_1 {
     display: none;
   }
   #Layer_2 {
     display: inline;
     margin-top: 80px;
+  }*/
+  .nav-right{
+    width: 60%;
+    height: 60%;
+    top:30px;
+    margin-left: 45%;
   }
+} 
+
+@media (max-width: 640px) {
+.button-div{
+  z-index: 1;
+  margin-top: 20%;
+  margin-left: 20%;
 }
+.nav-right{
+  width: 60%;
+  height: 60%;
+  top:45px;
+  margin-left: 45%;
+}
+
+}
+@media (max-width: 550px) {
+  .button-div{
+    z-index: 1;
+    margin-top: 25%;
+    margin-left: 15%;
+  }
+  .nav-right{
+    width: 65%;
+    height: 65%;
+    top:65px;
+    margin-left: 35%;
+  }
+  
+  }
+
 @media (max-width: 500px) {
   /* .flickity-button{
     display: none;
@@ -453,7 +524,23 @@ button {
   .top-left {
     display: none;
   }
+  .nav-right{
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    top: 30px;
+  }
 }
+
+@media (max-width: 470px) {
+  .button-div{
+   
+    margin-top: 30%;
+    margin-left: 10%;
+  }
+  
+  
+  }
 
 @media (max-width: 430px) {
   .service-row{
@@ -485,13 +572,13 @@ button {
     /* content: counter(carousel-cell); */
     
   }
-  #Layer_2 {
+  /* #Layer_2 {
     display: none;
   }
   #Layer_3 {
     display: inline;
     margin-top: 80px;
-  }
+  } */
   .service-row {
     height: 500px;
   }
@@ -513,7 +600,36 @@ button {
     height: 100%;
     width: 100%;
   }
+  .nav-right{
+    width: 90%;
+    height: 90%;
+    top:40px;
+    margin-left: 10%;
+  }
+  .button-div{
+    margin-top:-110px;
+    margin-left: 5%;
+  }
 }
+
+@media (max-width: 360px) {
+  .nav-right{
+    width: 90%;
+    height: 90%;
+    top:60px;
+    margin-left: 10%;
+  }
+  .button-div{
+    margin-top:-65px;
+    margin-left: 10%;
+  }
+  .button-div button{
+    width: 100px;
+  }
+
+}
+
+
 @media (max-width: 335px) {
   .service-card {
     width: 70%;
